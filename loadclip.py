@@ -17,7 +17,7 @@ def getRowFromNote(f):
             onenote.append(line)
     return onenote[3]
 
-
+# Divide words/phrases and sentences 
 def note(f):
     words = []
     sentences = []
@@ -25,17 +25,18 @@ def note(f):
         row = getRowFromNote(f)
         if row == None:
             break
-        print(row)
+        print(row)  # For test
         length = countWords(row)
         if length ==1 | (length>1&length<5):
             words.append(row)
         else :
             sentences.append(row)
     
-    print("Note Get Success")
+    
+    print("Note Get Success")   # For test
     return words,sentences
 
-f.truncate()
+f.truncate()    # Clean the .txt file
 f.close()
 
 
