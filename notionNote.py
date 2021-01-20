@@ -18,9 +18,9 @@ f.truncate()    # Clean the .txt file
 f.close()
 
 # Prepare
-token = 'a290b78d99a7b343fe6c0c160189950f2566e64ee9be985c157bbe57e0741785603f254afc6d19b7d3c700f87e315c98830d3436f59d0898ac3ad743524999e76018354331b754880080f4ad5022'
+token = '<input your token>'
 client  = NotionClient(token_v2 = token)
-page = client.get_collection_view("https://www.notion.so/454aab2c4a054fb5a69f6ff193c0e3d5?v=364ad471360d4def85f8d6da157474aa")
+page = client.get_collection_view("<input your address>")
 
 
 # Add a new note to table
