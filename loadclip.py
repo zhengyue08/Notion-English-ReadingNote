@@ -1,6 +1,6 @@
 import os
-note_path='/Volumes/Kindle/documents/My Clippings.txt'
-f=open(note_path,'r+')
+# note_path='/Volumes/Kindle/documents/My Clippings.txt'
+# f=open(note_path,'r+')
 
 def countWords(txt):
     if txt != None:
@@ -36,8 +36,9 @@ def note(f):
     print("Note Get Success")   # For test
     return words,sentences
 
-f.truncate()    # Clean the .txt file
-f.close()
+# [words,sentences] = note(f)
+
+
 
 
 
